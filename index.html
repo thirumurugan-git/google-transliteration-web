@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="transliteration.js">
+    </script>
+    <script type="text/javascript">
+        google.load("elements", "1", { packages: "transliteration" }); function onLoad() { var options = { sourceLanguage: 'en', destinationLanguage: ['ta'], shortcutKey: 'ctrl+g', transliterationEnabled: true }; var control = new google.elements.transliteration.TransliterationControl(options); var ids = ["transliterateTextarea"]; control.makeTransliteratable(ids); } google.setOnLoadCallback(onLoad);
+    </script>
+  </head>
+  <body>
+    Type in Hindi (Press Ctrl+g to toggle between English and Hindi)<br>
+    <textarea id="transliterateTextarea" style="width:600px;height:200px"></textarea>
+  </body>
+</html> 
